@@ -1,5 +1,7 @@
 # GaMO: Geometry-aware Multi-view Diffusion Outpainting for Sparse View 3D Reconstruction
 
+[**Project Page**](https://yichuanh.github.io/GaMO/) ｜ [**ArXiv**](https://arxiv.org/abs/2512.25073)
+
 <p align="center">
   <img src="2x4.gif" width="100%" />
 </p>
@@ -8,6 +10,7 @@
 </p>
 
 Official implementation of GaMO (version 1)
+
 
 ## Environment Setup
 ⚠️ Note: The project currently requires 3 separate conda environments because certain modules depend on incompatible library versions. A unified environment YAML will be released in the next update.
