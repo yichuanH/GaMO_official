@@ -6,7 +6,8 @@
 <p align="center">
   <img src="teaser.png" width="100%" />
 </p>
----
+
+Official implementation of GaMO (version 1)
 
 ## 📦 Installation
 
