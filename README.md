@@ -1,7 +1,6 @@
 # GaMO: Geometry-aware Multi-view Diffusion Outpainting for Sparse View 3D Reconstruction
 
-<video src="./transition_result.mp4" autoplay loop muted playsinline style="max-width: 100%;"></video>
-
+![Teaser](./transition_result.gif)
 ---
 
 ## 📦 Installation
