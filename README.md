@@ -23,7 +23,7 @@ gamo/check_points/
 Required:
 - GaMO pretrained model  
   (Download) → [pretrained_model.zip](https://huggingface.co/ewrfcas/MVGenMaster/resolve/main/check_points/pretrained_model.zip)  
-  Save to: `gamo/check_points/` then unzip
+  Save to: `gamo/check_points/` (unziped)
 - DUSt3R ViTLarge checkpoint  
   (Download) → [DUSt3R_ViTLarge_BaseDecoder_512_dpt.pth](https://huggingface.co/ewrfcas/MVGenMaster/resolve/main/check_points/DUSt3R_ViTLarge_BaseDecoder_512_dpt.pth)  
   Save to: `gamo/check_points/`
