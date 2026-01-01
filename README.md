@@ -76,12 +76,12 @@ Additional optional downloads (depending on your environment):
 
 Dataset must follow:
 
-3dgs/data/Input/Duster/{ROOT}/{SCENE}/
-├── images/
-├── images_test/
-└── sparse/
-    ├── 0/
-    └── test/
+    3dgs/data/Input/Duster/{ROOT}/{SCENE}/
+    ├── images/
+    ├── images_test/
+    └── sparse/
+        ├── 0/
+        └── test/
 
 Example:
 
