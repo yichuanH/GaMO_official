@@ -9,9 +9,7 @@
 
 Official implementation of GaMO (version 1)
 ### Environment Setup
-⚠️ Note: The project currently requires **three separate environments** because some modules depend on conflicting library versions.
-
-We are preparing a **unified environment YAML**, which will be released in the next update. Stay tuned.
+⚠️ Note: The project currently requires **3 separate environments** because some modules depend on conflicting library versions. We are preparing a **unified environment YAML**, which will be released in the next update. Stay tuned. 🏃
 
 
 ## 📦 Installation
