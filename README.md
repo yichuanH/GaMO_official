@@ -63,13 +63,13 @@ Additional optional downloads (depending on your environment):
     conda env create -f env/env_GaMO.yml
 
     # 3. Mask / Init environment
-    conda env create -f env/env_mask.yml
+    conda env create -f env/env_opamask.yml
 
 ---
 
 ### 2. Install editable modules
 
-    # For 3dgs and mask
+    # For 3dgs and opamask
     conda activate 3dgs
     pip install -e 3dgs/submodules/diff-gaussian-rasterization
     pip install -e 3dgs/submodules/simple-knn
@@ -101,9 +101,9 @@ Example:
 
 ## Pipeline Execution
 
-### Step 0 — Initial DUSt3R pointcloud (mask env)
+### Step 0 — Initial DUSt3R pointcloud (opamask env)
 
-    conda activate mask
+    conda activate opamask
     bash Point.sh Replica_6 office_2
     mkdir -p 3dgs/data/Input/Duster/Replica_6/office_2/sparse/0
     cp dust3r_results/Replica_6/office_2/sparse/0/points3D.ply \
@@ -117,7 +117,7 @@ Example:
 ### Step 2 — Mask + GaMO Outpainting
 
     # masks
-    conda activate mask
+    conda activate opamask
     bash Pipeline.sh --step 1b Replica_6 office_2
 
     # GaMO Outpaint
@@ -129,7 +129,7 @@ Example:
     conda activate GaMO
     bash Pipeline.sh --step 3 Replica_6 office_2
 
-    conda activate mask
+    conda activate opamask
     bash Pipeline.sh --step 3.5 Replica_6 office_2
 
 ### Step 4 — Final Refinement + Rendering (3dgs)
