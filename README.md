@@ -24,27 +24,31 @@ Official implementation of GaMO (version 1)
 
 ---
 
-## Pretrained Models
+## Pretrained Models (Required)
 
-Please download the following pretrained models and place them in the specified directories.
+Before running GaMO, make sure the pretrained weights exist under:
 
-### PixelArt pretrained models
+gamo/check_points/
 
-- **Pixel Art checkpoint** → place under: `PixelArt/`  
-  (Download) → [Pixel Art checkpoint](https://drive.google.com/file/d/1VRYKQOsNlE1w1LXje3yTRU5THN2MGdMM/view?usp=sharing)
-
-- **AliasNet checkpoint** → place under: `PixelArt/`  
-  (Download) → [AliasNet checkpoint](https://drive.google.com/file/d/17f2rKnZOpnO9ATwRXgqLz5u5AZsyDvq_/view?usp=sharing)
+Required:
+- GaMO pretrained model  
+  (Download) → [pretrained_model.zip](https://huggingface.co/ewrfcas/MVGenMaster/resolve/main/check_points/pretrained_model.zip)  
+  Save to: `gamo/check_points/` (unzipped)
+- DUSt3R ViTLarge checkpoint  
+  (Download) → [DUSt3R_ViTLarge_BaseDecoder_512_dpt.pth](https://huggingface.co/ewrfcas/MVGenMaster/resolve/main/check_points/DUSt3R_ViTLarge_BaseDecoder_512_dpt.pth)  
+  Save to: `gamo/check_points/`
 
 ---
 
-### PixelArt auxiliary checkpoints
+Additional optional downloads (depending on your environment):
+- Stable-Diffusion-2-1-base  
+  → place under: `gamo/check_points/`  
+  (Download) → [Stable-Diffusion-2-1-base](https://huggingface.co/Manojb/stable-diffusion-2-1-base)
 
-- **I2PNet checkpoint** → place under: `PixelArt/checkpoints/`  
-  (Download) → [I2PNet checkpoint](https://drive.google.com/file/d/1i_8xL3stbLWNF4kdQJ50ZhnRFhSDh3Az/view?usp=sharing)
+- MASt3R model weights  
+  → place under: `gamo/submodules/MASt3R-SLAM/thirdparty/mast3r/weights/`  
+  (Download) → [MASt3R GitHub](https://github.com/naver/mast3r)
 
-- **P2INet checkpoint** → place under: `PixelArt/checkpoints/`  
-  (Download) → [P2INet checkpoint](https://drive.google.com/file/d/1z9SmQRPoIuBT_18mzclEd1adnFn2t78T/view?usp=sharing)
 
 ---
 
