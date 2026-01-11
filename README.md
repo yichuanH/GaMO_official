@@ -65,9 +65,24 @@ Additional optional downloads (depending on your environment):
     # 3. Mask / Init environment
     conda env create -f env/env_opamask.yml
 
+### Option B: Unified Environment (Recommended)
+
+    # Create environment and install all submodules automatically
+    bash install_unified_env.sh
+
+    # Or manually:
+    conda env create -f env/env_unified.yml
+    conda activate unified
+    # Install submodules (see install_unified_env.sh for details)
+    pip install -e 3dgs/submodules/diff-gaussian-rasterization-confidence
+    pip install -e 3dgs/submodules/simple-knn
+    pip install -e gamo/submodules/MASt3R-SLAM
+    pip install -e gamo/submodules/MASt3R-SLAM/thirdparty/mast3r
+    pip install -e gamo/submodules/MASt3R-SLAM/thirdparty/in3d
+
 ---
 
-### 2. Install editable modules
+### 2. Install editable modules (If using Option A)
 
     # For 3dgs and opamask
     conda activate 3dgs
@@ -100,6 +115,25 @@ Example:
 ---
 
 ## Pipeline Execution
+
+### Unified Environment Usage
+
+If you installed the unified environment, simply activate it and use `Pipeline_unified.sh`:
+
+    conda activate unified
+
+    # Step 1
+    bash Pipeline_unified.sh --step 1 Replica_6 office_2
+
+    # Step 1b
+    bash Pipeline_unified.sh --step 1b Replica_6 office_2
+
+    # Step 2
+    bash Pipeline_unified.sh --step 2 Replica_6 office_2
+
+    # ... and so on for steps 3, 3.5, 4, 5.
+
+### Multi-Environment Usage (Option A)
 
 ### Step 0 — Initial DUSt3R pointcloud (opamask env)
 
