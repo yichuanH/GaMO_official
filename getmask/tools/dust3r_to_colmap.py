@@ -101,6 +101,8 @@ def read_depth_maps(depth_maps_path):
     
 
 def save_cameras(focals, principal_points, sparse_path, imgs_shape):
+    if len(imgs_shape) != 4 or imgs_shape[3] != 3:
+        raise ValueError(f"imgs_shape must be (N, H, W, 3), but got {imgs_shape}")
     # Save cameras.txt
     cameras_file = sparse_path / 'cameras.txt'
     with open(cameras_file, 'w') as cameras_file:
@@ -338,7 +340,7 @@ def convert_dust3r_to_colmap(image_files, save_dir,
     save_images_masks(imgs, masks, depth_maps, images_path, masks_path, depth_maps_path)
 
     print(focals, [principal_points, imgs.shape]) # [n, 1], [n, 2], [n, h, w, 3]
-    save_cameras(focals, principal_points, sparse_path, imgs_shape=imgs.shape) # TODO: check the shape
+    save_cameras(focals, principal_points, sparse_path, imgs_shape=imgs.shape)
     save_imagestxt(world2cam, sparse_path)
     # save_pointcloud(imgs, pts3d, masks, sparse_path)
     # save_pointcloud_with_normals((imgs*255).astype(np.uint8), pts3d, masks, sparse_path)
