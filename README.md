@@ -10,6 +10,8 @@
 </p>
 
 Official implementation of GaMO (version 1)
+🔔 **Note:** A fully integrated version with merged environments and a one-click end-to-end pipeline is planned to be released in **2026 February**.
+
 
 ## 🛠️ TODO
 - ✅ Release multi-stage code and environment setups  
@@ -18,7 +20,7 @@ Official implementation of GaMO (version 1)
 - ⬜ Integrate a one-click bash script for end-to-end pipeline execution  
 - ⬜ Add more evaluation datasets  
 
-> 🔔 **Note:** A fully integrated version with merged environments and a one-click end-to-end pipeline is planned to be released in **2026 February**.
+
 
 ## Environment Setup
 ⚠️ Note: The project currently requires 3 separate conda environments because certain modules depend on incompatible library versions. A unified environment YAML will be released in the next update.
