@@ -10,7 +10,7 @@
 </p>
 
 Official implementation of GaMO (version 1)
-🔔 **Note:** A fully integrated version with merged environments and a one-click end-to-end pipeline is planned to be released in **2026 February**.
+>🔔 **Note:** A fully integrated version with merged environments and a one-click end-to-end pipeline is planned to be released in **2026 February**.
 
 
 ## 🛠️ TODO
